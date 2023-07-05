@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Hotel Booking Registration Form</h2>
+  
+  <div class="container">
+    <form id="booking-form">
+      <h3>Customer Info</h3>
+      <div class="form-group">
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="total-days">Total No of Days:</label>
+        <input type="number" id="total-days" name="total-days" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="total-persons">Total No of Persons:</label>
+        <input type="number" id="total-persons" name="total-persons" required>
+      </div>
+      
+      <h3>Room Information</h3>
+      <div class="form-group">
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+          <option value="deluxe-room">Deluxe Room</option>
+          <option value="suite-room">Suite Room</option>
+        </select>
+      </div>
+      
+      <h3>Amenities</h3>
+      <div class="form-group">
+        <label for="amenities">Amenities:</label>
+        <select id="amenities" name="amenities">
+          <option value="ac">AC</option>
+          <option value="locker">Locker</option>
+        </select>
+      </div>
+      
+      <h3>Advance Payment</h3>
+      <div class="form-group">
+        <label for="advance-amount">Advance Amount:</label>
+        <input type="number" id="advance-amount" name="advance-amount">
+      </div>
+      
+      <h3>Total Cost Calculation</h3>
+      <div class="form-group">
+        <label for="total-room-cost">Total Room Cost:</label>
+        <input type="number" id="total-room-cost" name="total-room-cost" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label for="total-amenities-cost">Total Amenities Cost:</label>
+        <input type="number" id="total-amenities-cost" name="total-amenities-cost" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label for="total-cost">Total Cost:</label>
+        <input type="number" id="total-cost" name="total-cost" readonly>
+      </div>
+      
+      <h3>Additional Charges</h3>
+      <p>Upto 2 People: No Change in Cost</p>
+      <p>Per Day Cost for Extra Person: 1000/-</p>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
